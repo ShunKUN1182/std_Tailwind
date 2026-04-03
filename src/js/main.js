@@ -9,32 +9,32 @@ const stationWrap = document.querySelector("#stationWrap");
 const osakaStations = [
     {
         name: "北花田",
-        trainLine: "大阪メトロ・御堂筋線",
+        trainLine: ["御堂筋線"],
         img: ["./src/assets/Midosuji_logo.png"],
     },
     {
         name: "あびこ",
-        trainLine: "大阪メトロ・御堂筋線",
+        trainLine: ["御堂筋線"],
         img: ["./src/assets/Midosuji_logo.png"],
     },
     {
         name: "長居",
-        trainLine: "大阪メトロ・御堂筋線",
+        trainLine: ["御堂筋線"],
         img: ["./src/assets/Midosuji_logo.png"],
     },
     {
         name: "西田辺",
-        trainLine: "大阪メトロ・御堂筋線",
+        trainLine: ["御堂筋線"],
         img: ["./src/assets/Midosuji_logo.png"],
     },
     {
         name: "昭和町",
-        trainLine: "大阪メトロ・御堂筋線",
+        trainLine: ["御堂筋線"],
         img: ["./src/assets/Midosuji_logo.png"],
     },
     {
         name: "天王寺",
-        trainLine: "大阪メトロ・御堂筋線/谷町線",
+        trainLine: ["御堂筋線", "谷町線"],
         img: ["./src/assets/Midosuji_logo.png", "./src/assets/Tanimati_logo.svg"],
     },
 ];
@@ -62,10 +62,17 @@ stationBtn.addEventListener("click", () => {
     inputHTML += `
       <div class="flex flex-col gap-[4px] justify-center items-center">
           <h2 id="stationName" class="text-3xl font-bold md:text-4xl animate-fadeUp">${osakaStations[randomNum].name}</h2>
-          <p id="trainLine" class="text-sm text-gray-500 animate-fadeUp">${osakaStations[randomNum].trainLine}</p>
-      </div>
-  `;
+          <p id="trainLine" class="text-sm text-gray-500 animate-fadeUp">
+      `;
+    osakaStations[randomNum].trainLine.forEach((e) => {
+        inputHTML += `
+          ${e}
+      `;
+    });
+
+    inputHTML += `
+    </p>
+        </div>
+    `;
     stationWrap.innerHTML = inputHTML;
-    // stationName.textContent = osakaStations[randomNum].name;
-    // stationTrainLine.textContent = osakaStations[randomNum].trainLine;
 });
