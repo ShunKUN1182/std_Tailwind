@@ -13,20 +13,31 @@
                 <p class="w-3xs text-sm text-gray-600 md:text-base">次の休日はここで決まり</p>
             </div>
             <div
+                id="stationWrap"
                 class="flex flex-col gap-[4px] justify-center items-center rounded-2xl border p-[36px] w-[300px] md:w-[400px] lg:w-[500px] xl:w-[600px]"
             >
-                <img
-                    src="./src/assets/Midosuji_logo.png"
-                    alt=""
-                    class="w-[48px] h-[48px] object-cover my-[12px]"
-                />
+                <div class="flex gap-[12px]">
+                    <img
+                        id="trainImg"
+                        src="./src/assets/Midosuji_logo.png"
+                        alt=""
+                        class="w-[48px] h-[48px] object-cover my-[12px]"
+                    />
+                    <img
+                        id="trainImg"
+                        src="./src/assets/Tanimati_logo.svg"
+                        alt=""
+                        class="w-[48px] h-[48px] object-cover my-[12px]"
+                    />
+                </div>
                 <div class="flex flex-col gap-[4px] justify-center items-center">
-                    <h2 class="text-3xl font-bold md:text-4xl">北花田</h2>
-                    <p class="text-sm text-gray-500">大阪メトロ・御堂筋線</p>
+                    <h2 id="stationName" class="text-3xl font-bold md:text-4xl">北花田</h2>
+                    <p id="trainLine" class="text-sm text-gray-500">大阪メトロ・御堂筋線</p>
                 </div>
             </div>
             <button
-                class="text-gray-50 bg-blue-500 rounded-2xl font-bold p-[16px] w-[300px] md:w-[400px] lg:w-[500px] xl:w-[600px] hover:bg-blue-600 hover:scale-[99%] duration-300"
+                id="stationBtn"
+                class="text-gray-50 bg-blue-600 rounded-2xl font-bold p-[16px] w-[300px] md:w-[400px] lg:w-[500px] xl:w-[600px] hover:bg-blue-700 hover:scale-[99%] duration-300"
             >
                 駅を決める
             </button>
