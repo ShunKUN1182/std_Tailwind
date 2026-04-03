@@ -11,12 +11,12 @@ export default {
                     },
                     "100%": {
                         opacity: 1,
-                        transform: "translateY(0)",
+                        transform: "translateY(-5px)",
                     },
                 },
             },
             animation: {
-                fadeUp: "fadeUp 0.4s ease-out",
+                fadeUp: "fadeUp 0.4s ease-out forwards",
             },
         },
     },
