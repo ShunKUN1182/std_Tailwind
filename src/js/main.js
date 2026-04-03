@@ -1,10 +1,10 @@
 import "../css/style.css";
 
 const stationBtn = document.querySelector("#stationBtn");
-const stationName = document.querySelector("#stationName");
-const stationTrainLine = document.querySelector("#trainLine");
-const trainImg = document.querySelector("#trainImg");
 const stationWrap = document.querySelector("#stationWrap");
+// const stationName = document.querySelector("#stationName");
+// const stationTrainLine = document.querySelector("#trainLine");
+// const trainImg = document.querySelector("#trainImg");
 
 const osakaStations = [
     {
