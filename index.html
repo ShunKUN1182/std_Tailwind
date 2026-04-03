@@ -7,7 +7,22 @@
         <title>mosha-tailwind</title>
     </head>
     <body>
-        <div id="app"></div>
+        <div class="h-screen flex flex-col justify-center items-center gap-[32px]">
+            <div class="flex flex-col justify-center items-center w-3xs">
+                <h1 class="w-3xs text-2xl font-bold md:text-4xl">どこの駅にいこうか</h1>
+                <p class="w-3xs text-sm text-gray-600 md:text-base">次の休日はここで決まり</p>
+            </div>
+            <div
+                class="flex flex-col justify-center items-center rounded-2xl border  p-[36px] w-[300px] md:w-[400px] lg:w-[600px] xl:w-[800px]"
+            >
+                <img
+                    src="./src/assets/Midosuji_logo.png"
+                    alt=""
+                    class="w-[48px] h-[48px] object-cover"
+                />
+                <h2 class="text-3xl md:text-4xl">北花田</h2>
+            </div>
+        </div>
         <script type="module" src="/src/js/main.js"></script>
     </body>
 </html>
