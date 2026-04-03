@@ -7,21 +7,29 @@
         <title>mosha-tailwind</title>
     </head>
     <body>
-        <div class="h-screen flex flex-col justify-center items-center gap-[32px]">
+        <div class="h-screen flex flex-col items-center gap-[32px] my-[170px]">
             <div class="flex flex-col justify-center items-center w-3xs">
                 <h1 class="w-3xs text-2xl font-bold md:text-4xl">どこの駅にいこうか</h1>
                 <p class="w-3xs text-sm text-gray-600 md:text-base">次の休日はここで決まり</p>
             </div>
             <div
-                class="flex flex-col justify-center items-center rounded-2xl border  p-[36px] w-[300px] md:w-[400px] lg:w-[600px] xl:w-[800px]"
+                class="flex flex-col gap-[4px] justify-center items-center rounded-2xl border p-[36px] w-[300px] md:w-[400px] lg:w-[500px] xl:w-[600px]"
             >
                 <img
                     src="./src/assets/Midosuji_logo.png"
                     alt=""
-                    class="w-[48px] h-[48px] object-cover"
+                    class="w-[48px] h-[48px] object-cover my-[12px]"
                 />
-                <h2 class="text-3xl md:text-4xl">北花田</h2>
+                <div class="flex flex-col gap-[4px] justify-center items-center">
+                    <h2 class="text-3xl font-bold md:text-4xl">北花田</h2>
+                    <p class="text-sm text-gray-500">大阪メトロ・御堂筋線</p>
+                </div>
             </div>
+            <button
+                class="text-gray-50 bg-blue-500 rounded-2xl font-bold p-[16px] w-[300px] md:w-[400px] lg:w-[500px] xl:w-[600px] hover:bg-blue-600 hover:scale-[99%] duration-300"
+            >
+                駅を決める
+            </button>
         </div>
         <script type="module" src="/src/js/main.js"></script>
     </body>
