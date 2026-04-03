@@ -52,7 +52,7 @@ stationBtn.addEventListener("click", () => {
             id="trainImg"
             src="${e}"
             alt=""
-            class="w-[48px] h-[48px] object-cover my-[12px]"
+            class="w-[48px] h-[48px] object-cover my-[12px] animate-fadeUp"
           />    
         `;
     });
@@ -61,8 +61,8 @@ stationBtn.addEventListener("click", () => {
     `;
     inputHTML += `
       <div class="flex flex-col gap-[4px] justify-center items-center">
-          <h2 id="stationName" class="text-3xl font-bold md:text-4xl">${osakaStations[randomNum].name}</h2>
-          <p id="trainLine" class="text-sm text-gray-500">${osakaStations[randomNum].trainLine}</p>
+          <h2 id="stationName" class="text-3xl font-bold md:text-4xl animate-fadeUp">${osakaStations[randomNum].name}</h2>
+          <p id="trainLine" class="text-sm text-gray-500 animate-fadeUp">${osakaStations[randomNum].trainLine}</p>
       </div>
   `;
     stationWrap.innerHTML = inputHTML;
