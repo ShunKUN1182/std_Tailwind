@@ -58,7 +58,11 @@ const osakaStations = [
     {
         name: "なんば",
         trainLine: "大阪メトロ・御堂筋線／四つ橋線／千日前線",
-        img: ["./src/assets/Midosuji_logo.png", "./src/assets/Yotsubashi_logo.png", "./src/assets/Sennitimae_logo.svg"],
+        img: [
+            "./src/assets/Midosuji_logo.png",
+            "./src/assets/Yotsubashi_logo.png",
+            "./src/assets/Sennitimae_logo.svg",
+        ],
     },
     {
         name: "心斎橋",
@@ -68,7 +72,11 @@ const osakaStations = [
     {
         name: "本町",
         trainLine: "大阪メトロ・御堂筋線／四つ橋線／中央線",
-        img: ["./src/assets/Midosuji_logo.png", "./src/assets/Yotsubashi_logo.png", "./src/assets/Tyuou_logo.svg"],
+        img: [
+            "./src/assets/Midosuji_logo.png",
+            "./src/assets/Yotsubashi_logo.png",
+            "./src/assets/Tyuou_logo.svg",
+        ],
     },
     {
         name: "淀屋橋",
@@ -1771,26 +1779,26 @@ stationBtn.addEventListener("click", () => {
     console.log(randomNum);
     let inputHTML = "";
     inputHTML += `
-      <div class="flex gap-[12px]">
+        <div class="flex gap-[12px]">
     `;
     osakaStations[randomNum].img.forEach((e) => {
         inputHTML += `
-          <img
+        <img
             id="trainImg"
             src="${e}"
             alt=""
             class="w-[48px] h-[48px] object-cover my-[12px] animate-fadeUp"
-          />    
+        />    
         `;
     });
     inputHTML += `
-      </div>
+        </div>
     `;
     inputHTML += `
-      <div class="flex flex-col gap-[4px] justify-center items-center">
-          <h2 id="stationName" class="text-3xl font-bold md:text-4xl animate-fadeUp">${osakaStations[randomNum].name}</h2>
-          <p id="trainLine" class="text-sm text-gray-500 animate-fadeUp">${osakaStations[randomNum].trainLine}</p>
-      </div>
+    <div class="flex flex-col gap-[4px] justify-center items-center">
+        <h2 id="stationName" class="text-2xl font-bold md:text-4xl animate-fadeUp">${osakaStations[randomNum].name}</h2>
+        <p id="trainLine" class="text-sm text-gray-500 animate-fadeUp">${osakaStations[randomNum].trainLine}</p>
+    </div>
     `;
     stationWrap.innerHTML = inputHTML;
 });
